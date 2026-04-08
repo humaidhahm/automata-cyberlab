@@ -1,0 +1,18 @@
+digraph phone_dfa {
+	bgcolor=white pad=0.3 rankdir=LR
+	node [color="#475569" fillcolor="#f8fafc" fontname="Segoe UI" fontsize=11 shape=circle style=filled]
+	edge [color="#64748b" fontname="Segoe UI" fontsize=10]
+	start [label="" shape=point width=0.15]
+	q10 [fillcolor="#dcfce7" shape=doublecircle]
+	start -> q0 [label=start]
+	q0 -> q1 [label=digit]
+	q1 -> q2 [label=digit]
+	q2 -> q3 [label=digit]
+	q3 -> q4 [label=digit]
+	q4 -> q5 [label=digit]
+	q5 -> q6 [label=digit]
+	q6 -> q7 [label=digit]
+	q7 -> q8 [label=digit]
+	q8 -> q9 [label=digit]
+	q9 -> q10 [label=digit]
+}

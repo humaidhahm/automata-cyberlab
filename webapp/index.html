@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deterministic Web Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+
+    <div class="page">
+        <header class="hero reveal delay-1">
+            <p class="eyebrow">finite automata + cyber checks</p>
+            <h1>deterministic web lab</h1>
+        </header>
+
+        <main class="workspace">
+            <section class="panel controls reveal delay-2">
+                <div class="checker-stack">
+                    <div class="stack-head">
+                        <h2>Run Checks</h2>
+                        <p class="hint">One input, six checkers.</p>
+                    </div>
+                    <textarea id="inputField" rows="3" placeholder="Try abc@mail.com or ' OR 1=1 --"></textarea>
+                    <div class="checker-list">
+                        <div class="checker-row">
+                            <button class="checker-btn" data-checker="email">Validate Email</button>
+                            <button class="info-btn" data-rule="email" aria-label="Show email rules">i</button>
+                        </div>
+                        <div class="checker-row">
+                            <button class="checker-btn" data-checker="phone">Validate Phone</button>
+                            <button class="info-btn" data-rule="phone" aria-label="Show phone rules">i</button>
+                        </div>
+                        <div class="checker-row">
+                            <button class="checker-btn" data-checker="password">Validate Password</button>
+                            <button class="info-btn" data-rule="password" aria-label="Show password rules">i</button>
+                        </div>
+                        <div class="checker-row">
+                            <button class="checker-btn" data-checker="ipv4">Validate IPv4</button>
+                            <button class="info-btn" data-rule="ipv4" aria-label="Show IPv4 rules">i</button>
+                        </div>
+                        <div class="checker-row">
+                            <button class="checker-btn" data-checker="sqli">Detect SQL Injection Pattern</button>
+                            <button class="info-btn" data-rule="sqli" aria-label="Show SQL injection rules">i</button>
+                        </div>
+                        <div class="checker-row">
+                            <button class="checker-btn" data-checker="xss">Detect XSS Pattern</button>
+                            <button class="info-btn" data-rule="xss" aria-label="Show XSS rules">i</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="utility-row">
+                    <div class="diagram-actions">
+                        <button class="diagram-btn" data-diagram="email">Open Email DFA</button>
+                        <button class="diagram-btn" data-diagram="phone">Open Phone DFA</button>
+                        <button class="diagram-btn" data-diagram="ipv4">Open IPv4 DFA</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel output reveal delay-3">
+                <div class="status-block">
+                    <p class="status-label">Status</p>
+                    <div id="statusBadge" class="status neutral">Ready</div>
+                </div>
+
+                <div id="logPanel" class="collapsible hidden-section">
+                    <div class="collapsible-head">
+                        <h2>Evaluation Log</h2>
+                    </div>
+                    <pre id="traceOutput">No evaluation yet.</pre>
+                </div>
+            </section>
+
+            <section id="diagramPanel" class="panel diagram-zone reveal delay-3">
+                <div class="diagram-zone-head">
+                        <h3>DFA Diagram</h3>
+                        <p id="diagramCaption">Open a DFA to render it here.</p>
+                </div>
+                <div id="diagramHost" class="diagram-host"></div>
+            </section>
+        </main>
+    </div>
+
+    <div id="ruleModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="ruleTitle">
+        <div class="modal-card">
+            <div class="modal-head">
+                <h3 id="ruleTitle">Rules</h3>
+                <button id="closeModalBtn" class="close-modal" aria-label="Close rules">x</button>
+            </div>
+            <pre id="ruleBody"></pre>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

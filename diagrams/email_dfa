@@ -1,0 +1,16 @@
+digraph email_dfa {
+	bgcolor=white pad=0.3 rankdir=LR
+	node [color="#475569" fillcolor="#f8fafc" fontname="Segoe UI" fontsize=11 shape=circle style=filled]
+	edge [color="#64748b" fontname="Segoe UI" fontsize=10]
+	start [label="" shape=point width=0.15]
+	q5 [fillcolor="#dcfce7" shape=doublecircle]
+	start -> q0 [label=start]
+	q0 -> q1 [label=alnum]
+	q1 -> q1 [label="alnum/."]
+	q1 -> q2 [label="@"]
+	q2 -> q3 [label=alpha]
+	q3 -> q3 [label=alpha]
+	q3 -> q4 [label="."]
+	q4 -> q5 [label=alpha]
+	q5 -> q5 [label=alpha]
+}
