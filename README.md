@@ -79,6 +79,3 @@ Deployed on Vercel at:
 - The tool is for educational and demo purposes.
 - Security detections are signature-based heuristics, not full static or dynamic analysis.
 
-## Author
-
-Built and iterated as part of a TOC plus cybersecurity visualization project.
