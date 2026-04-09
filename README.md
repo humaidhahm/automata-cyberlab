@@ -1,4 +1,4 @@
-# CyberSecLab VIT
+# Automata Cyberlab
 
 A lightweight interactive web lab for finite automata validation and basic cybersecurity pattern checks.
 
