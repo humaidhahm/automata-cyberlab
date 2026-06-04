@@ -146,4 +146,4 @@ The project is deployed on Vercel:
 - Security detections are signature-based heuristics, not full static or dynamic analysis.
 - The CLI and web app share the same core validation rules.
 
-<p align="center">Made with ❤️</p>
+<p align="center">made with ❤️ by <a href="https://github.com/humaidhahm">humaidh</a></p>

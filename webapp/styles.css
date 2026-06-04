@@ -96,9 +96,20 @@ body {
     margin: 0;
 }
 
+.page-footer a {
+    color: var(--accent-a);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(77, 245, 255, 0.42);
+}
+
+.page-footer a:hover {
+    color: #fff8ff;
+    border-bottom-color: #fff8ff;
+}
+
 .hero {
     text-align: center;
-    padding: 10px 0 6px;
+    padding: 12px 0 6px;
     overflow: visible;
 }
 
@@ -106,14 +117,25 @@ body {
     display: block;
     max-width: 100%;
     margin: 0 auto 10px;
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hero-art::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .hero-art pre {
+    display: inline-block;
+    min-width: max-content;
     margin: 0;
+    padding: 0 10px;
     color: #f7fbff;
-    font: 400 clamp(0.5rem, 1.1vw, 0.86rem)/1.15 "VT323", monospace;
-    letter-spacing: 0.03em;
+    font: 400 clamp(0.42rem, 0.95vw, 0.72rem)/1.22 "VT323", monospace;
+    letter-spacing: 0;
     overflow: visible;
     white-space: pre;
     text-shadow:
@@ -307,12 +329,17 @@ body {
 
 .info-btn {
     width: 34px;
+    height: 34px;
     border: none;
-    border-radius: 9px;
+    border-radius: 50%;
     background: linear-gradient(180deg, rgba(255, 95, 162, 0.22), rgba(157, 123, 255, 0.14));
     color: #fff9ff;
-    font-size: 1.28rem;
+    font-size: 1.22rem;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
     line-height: 1;
+    padding: 0;
     cursor: pointer;
     box-shadow: 0 0 0 1px rgba(255, 95, 162, 0.24);
 }
@@ -682,7 +709,7 @@ body {
     }
 
     .hero-art pre {
-        font-size: clamp(0.38rem, 2vw, 0.7rem);
+        font-size: clamp(0.34rem, 1.65vw, 0.58rem);
     }
 
     .checker-row {
