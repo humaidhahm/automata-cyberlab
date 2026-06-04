@@ -4,42 +4,22 @@ A neon-styled DFA and security lab for validating inputs, visualizing flows, and
 
 [![Live Demo](https://img.shields.io/badge/demo-online-00d4ff?style=for-the-badge&logo=vercel&logoColor=white)](https://cyberseclab-vit.vercel.app)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![CLI](https://img.shields.io/badge/CLI-slash%20commands-8b5cf6?style=for-the-badge&logo=windowsterminal&logoColor=white)](#cli)
 [![Web UI](https://img.shields.io/badge/web%20ui-visual%20lab-f43f5e?style=for-the-badge&logo=googlechrome&logoColor=white)](#web-app)
-[![Status](https://img.shields.io/badge/status-actively%20shaped-22c55e?style=for-the-badge)](#snapshot)
-[![Theme](https://img.shields.io/badge/theme-neon%20terminal-f97316?style=for-the-badge)](#highlights)
-[![DFA](https://img.shields.io/badge/dfa-visual%20flow-14b8a6?style=for-the-badge)](#what-it-checks)
-[![Security](https://img.shields.io/badge/security-heuristic%20rules-e879f9?style=for-the-badge)](#what-it-checks)
+[![CLI](https://img.shields.io/badge/cli-slash%20commands-8b5cf6?style=for-the-badge&logo=windowsterminal&logoColor=white)](#cli)
 
 > Local web app + CLI, sharing the same validation core.
 
 ## Hero Banner
 
 ```text
-   ██████╗██╗   ██╗██████╗ ███████╗██████╗ ███████╗██████╗
-  ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗██╔════╝██╔══██╗
-  ██║      ╚████╔╝ ██████╔╝█████╗  ██║  ██║█████╗  ██║  ██║
-  ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██║  ██║██╔══╝  ██║  ██║
-  ╚██████╗   ██║   ██║  ██║███████╗██████╔╝███████╗██████╔╝
-   ╚═════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═════╝ ╚══════╝╚═════╝
+   ____      _               ____  _____  _
+  / ___|   _| |__   ___ _ __|  _ \|  ___|/ \
+ | |  | | | | '_ \ / _ \ '__| | | | |_  / _ \
+ | |__| |_| | |_) |  __/ |  | |_| |  _|/ ___ \
+  \____\__, |_.__/ \___|_|  |____/|_| /_/   \_\
+       |___/
 
-  DFA visualization, CLI checks, and cyber-lab workflows
-```
-
-<table>
-<tr>
-<td><strong>Palette</strong></td>
-<td><span style="color:#00d4ff">cyan</span> · <span style="color:#8b5cf6">violet</span> · <span style="color:#f43f5e">rose</span> · <span style="color:#22c55e">green</span> · <span style="color:#f97316">amber</span></td>
-</tr>
-</table>
-
-```text
-    ___         __                      __  __      __
-   / _ | ___   / /____ ___  ___  ___   / /_/ /__   / /__
-  / __ |/ _ \ / __/ -_) _ \/ _ \/ _ \ / __/ / -_) /  '_/
- /_/ |_|\___/ \__/\__/_//_/\___/_//_/ \__/_/\__/ /_/\_\
-
-  finite automata + security checks + terminal workflow
+  CyberDFA // finite automata + security checks
 ```
 
 ## Snapshot
@@ -51,43 +31,32 @@ A neon-styled DFA and security lab for validating inputs, visualizing flows, and
 | Core logic | Shared Python rules for email, phone, password, IPv4, SQLi, and XSS |
 | Diagrams | Built-in DFA views for the automata-based validators |
 
-### Visual map
+### Visual Map
 
-```text
-web app  ── colorful browser lab
-  │
-  ├─ controls  ── validators + rules + status
-  ├─ output    ── traces + crack-time output
-  └─ diagram   ── DFA render + fullscreen
-
-cli      ── slash-command terminal
-  │
-  ├─ /email /phone /ipv4 /password
-  └─ /sqli /xss /diagram /rules
-```
+![CyberDFA visual map](docs/visual-map.png)
 
 ## Installation
 
 1. Clone the repository:
 
-  ```bash
-  git clone https://github.com/humaidhahm/automata-cyberlab.git
-  cd automata-cyberlab
-  ```
+   ```bash
+   git clone https://github.com/humaidhahm/automata-cyberlab.git
+   cd automata-cyberlab
+   ```
 
 2. Make sure Python 3.10+ is available.
 
 3. Run the web app:
 
-  ```bash
-  python main.py
-  ```
+   ```bash
+   python main.py
+   ```
 
 4. Or run the CLI:
 
-  ```bash
-  python main.py --cli
-  ```
+   ```bash
+   python main.py --cli
+   ```
 
 5. Open the local URL shown in the terminal for the web app.
 
@@ -95,17 +64,17 @@ cli      ── slash-command terminal
 <summary>What makes this different</summary>
 
 - The browser UI and terminal CLI use the same validator engine.
-- The README is structured like a compact project landing page instead of a plain checklist.
 - The interface focuses on DFA visualization, signature detection, and terminal-first workflows.
+- The app is dependency-light: plain JavaScript for the browser and Python for local serving/CLI use.
 
 </details>
 
-## What it checks
+## What It Checks
 
 | Checker | Behavior | Visual cue |
 | --- | --- | --- |
-| Email | DFA-style validation with local part, `@`, domain, and TLD transitions | `q0 → q5` |
-| Phone | Exactly 10 digits, one transition per digit | `q0 → q10` |
+| Email | DFA-style validation with local part, `@`, domain, and TLD transitions | `q0 -> q5` |
+| Phone | Exactly 10 digits, one transition per digit | `q0 -> q10` |
 | Password | Length, uppercase, lowercase, digit checks, plus estimated brute-force crack time | entropy score |
 | IPv4 | Four octets, numeric-only, `0-255`, no leading zeros | dotted octets |
 | SQL injection | Signature-based heuristics and quote-balance hints | alert traces |
@@ -118,60 +87,30 @@ cli      ── slash-command terminal
 - Inline rule popups for each checker
 - Status badge plus evaluation trace
 - DFA diagram panel with fullscreen support
-- Retro cyber UI with a more colorful terminal-inspired presentation
 - No frontend framework dependency
 - Clean split between presentation, logic, and server entrypoints
-- Easy terminal workflow for quick checks and demo runs
 
-### Design tokens
-
-| Token | Purpose |
-| --- | --- |
-| `cyan` | Active highlights, status glow, and foreground energy |
-| `violet` | CLI and tertiary accent color |
-| `rose` | Alerts, warnings, and emphasis blocks |
-| `green` | Successful states and safe outcomes |
-| `amber` | Callouts, badges, and supporting accents |
-
-## Interface notes
-
-The project deliberately mixes several UI patterns so it reads more like a real tool than a single-purpose demo:
-
-1. A top-level hero with neon branding
-2. Compact summary tables for fast scanning
-3. A details disclosure block for deeper context
-4. Code fences for copy-friendly startup commands
-5. A fixed project tree to clarify the structure
-
-## Preview Gallery
-
-These preview panels are embedded as SVG assets so the README has visual samples without relying on external screenshots.
-
-| Preview | File |
-| --- | --- |
-| Web workspace | [docs/previews/web-workspace.svg](docs/previews/web-workspace.svg) |
-| CLI shell | [docs/previews/cli-shell.svg](docs/previews/cli-shell.svg) |
-| DFA panel | [docs/previews/dfa-panel.svg](docs/previews/dfa-panel.svg) |
-
-## Project layout
+## Project Layout
 
 ```text
 .
-├── main.py          # local server + CLI entrypoint
-├── lab_core.py      # shared validation logic
-├── webapp/
-│   ├── index.html   # interface markup
-│   ├── styles.css   # visual design
-│   └── app.js       # browser-side logic and DFA rendering
+|-- main.py          # local server + CLI entrypoint
+|-- lab_core.py      # shared validation logic
+|-- webapp/
+|   |-- index.html   # interface markup
+|   |-- styles.css   # visual design
+|   `-- app.js       # browser-side logic and DFA rendering
+`-- docs/
+    `-- visual-map.png
 ```
 
-## Run locally
+## Run Locally
 
 Requirements:
 
 - Python 3.10+
 
-### Web app
+### Web App
 
 ```bash
 python main.py
@@ -215,28 +154,13 @@ CLI examples:
 /rules password
 ```
 
-## Usage flow
+## Usage Flow
 
 1. Enter input in the text box or the CLI prompt.
 2. Run a checker from the control panel or by slash command.
 3. Read the pass/fail summary and evaluation trace.
 4. Open Email, Phone, or IPv4 DFA diagrams when you want the automata view.
 5. Click a rendered DFA to expand it fullscreen.
-
-## Badges And Signals
-
-These badges are intentionally loud so the README feels more like a landing page and less like a plain text file.
-
-| Signal | Meaning |
-| --- | --- |
-| Demo badge | Points to the deployed experience |
-| Python badge | Shows the runtime requirement |
-| CLI badge | Highlights the terminal mode |
-| Web UI badge | Highlights the browser workflow |
-
-<blockquote>
-  <strong>Color goal:</strong> every top-level section should have something visually distinct, whether that's a badge, a table, a callout, a code fence, or a disclosure block.
-</blockquote>
 
 ## Deployment
 
@@ -249,5 +173,5 @@ The project is deployed on Vercel:
 - The tool is for educational and demo purposes.
 - Security detections are signature-based heuristics, not full static or dynamic analysis.
 - The CLI and web app share the same core validation rules.
-- Made with ❤️ for automata and security demos.
 
+<p align="center">Made with ❤️</p>
