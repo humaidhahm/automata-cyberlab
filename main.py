@@ -48,7 +48,7 @@ class WebAppHandler(SimpleHTTPRequestHandler):
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Automata Cyberlab: web server and interactive CLI.")
+    parser = argparse.ArgumentParser(description="CyberDFA: web server and interactive CLI.")
     parser.add_argument("--host", default="127.0.0.1", help="Host interface to bind.")
     parser.add_argument("--port", type=int, default=8000, help="Port to serve on.")
     parser.add_argument(
@@ -101,7 +101,7 @@ def print_banner() -> None:
     print(colorize(CLI_ART[3], ANSI_YELLOW))
     print(colorize(CLI_ART[4], ANSI_BLUE))
     print()
-    print(colorize("Automata Cyberlab CLI", ANSI_BOLD + ANSI_CYAN))
+    print(colorize("CyberDFA CLI", ANSI_BOLD + ANSI_CYAN))
     print(colorize("Slash commands: /help, /email, /phone, /password, /ipv4, /sqli, /xss, /diagram, /rules, /clear, /exit", ANSI_DIM + ANSI_GREEN))
     print(colorize("Type /web to see the local web UI URL.", ANSI_DIM + ANSI_MAGENTA))
 
@@ -219,7 +219,7 @@ def run_cli(one_shot_command: str | None = None) -> None:
 
     while True:
         try:
-            raw_line = input("cyberlab> ")
+            raw_line = input("cyberdfa> ")
         except EOFError:
             print()
             break

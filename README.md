@@ -1,6 +1,6 @@
-# Automata Cyberlab
+# CyberDFA
 
-A neon-styled automata and security lab for validating inputs, visualizing DFA flows, and testing simple attack-pattern heuristics.
+A neon-styled DFA and security lab for validating inputs, visualizing flows, and testing simple attack-pattern heuristics.
 
 [![Live Demo](https://img.shields.io/badge/demo-online-00d4ff?style=for-the-badge&logo=vercel&logoColor=white)](https://cyberseclab-vit.vercel.app)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
