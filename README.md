@@ -9,32 +9,6 @@ A neon-styled DFA and security lab for validating inputs, visualizing flows, and
 
 > Local web app + CLI, sharing the same validation core.
 
-## Hero Banner
-
-```text
-   ____      _               ____  _____  _
-  / ___|   _| |__   ___ _ __|  _ \|  ___|/ \
- | |  | | | | '_ \ / _ \ '__| | | | |_  / _ \
- | |__| |_| | |_) |  __/ |  | |_| |  _|/ ___ \
-  \____\__, |_.__/ \___|_|  |____/|_| /_/   \_\
-       |___/
-
-  CyberDFA // finite automata + security checks
-```
-
-## Snapshot
-
-| Area | What it gives you |
-| --- | --- |
-| Web UI | A colorful browser workspace for running checks and viewing DFA diagrams |
-| CLI | Slash-command terminal mode with the same validation logic |
-| Core logic | Shared Python rules for email, phone, password, IPv4, SQLi, and XSS |
-| Diagrams | Built-in DFA views for the automata-based validators |
-
-### Visual Map
-
-![CyberDFA visual map](docs/visual-map.png)
-
 ## Installation
 
 1. Clone the repository:
@@ -96,12 +70,10 @@ A neon-styled DFA and security lab for validating inputs, visualizing flows, and
 .
 |-- main.py          # local server + CLI entrypoint
 |-- lab_core.py      # shared validation logic
-|-- webapp/
-|   |-- index.html   # interface markup
-|   |-- styles.css   # visual design
-|   `-- app.js       # browser-side logic and DFA rendering
-`-- docs/
-    `-- visual-map.png
+`-- webapp/
+    |-- index.html   # interface markup
+    |-- styles.css   # visual design
+    `-- app.js       # browser-side logic and DFA rendering
 ```
 
 ## Run Locally

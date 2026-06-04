@@ -98,28 +98,24 @@ body {
 
 .hero {
     text-align: center;
-    padding: 10px 0 4px;
+    padding: 10px 0 6px;
+    overflow: visible;
 }
 
 .hero-art {
-    display: inline-flex;
-    margin: 0 auto 8px;
-    padding: 10px 14px;
-    border-radius: 16px;
-    background:
-        linear-gradient(135deg, rgba(77, 245, 255, 0.12), rgba(157, 123, 255, 0.1) 48%, rgba(255, 95, 162, 0.08)),
-        rgba(8, 12, 25, 0.72);
-    box-shadow:
-        0 0 0 1px rgba(93, 228, 199, 0.3),
-        0 20px 40px rgba(0, 0, 0, 0.35),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 10px;
+    overflow: visible;
 }
 
 .hero-art pre {
     margin: 0;
     color: #f7fbff;
-    font: 400 clamp(0.58rem, 1.25vw, 0.93rem)/1.05 "VT323", monospace;
+    font: 400 clamp(0.5rem, 1.1vw, 0.86rem)/1.15 "VT323", monospace;
     letter-spacing: 0.03em;
+    overflow: visible;
+    white-space: pre;
     text-shadow:
         0 0 10px rgba(77, 245, 255, 0.25),
         0 0 18px rgba(157, 123, 255, 0.18);
@@ -158,17 +154,6 @@ body {
     color: var(--accent-a);
     font-size: 1.22rem;
     text-shadow: 0 0 12px rgba(77, 245, 255, 0.22);
-}
-
-.hero h1 {
-    margin: 2px 0 0;
-    font-size: clamp(1.6rem, 4.8vw, 2.65rem);
-    line-height: 0.95;
-    font-weight: 400;
-    color: #fff8ff;
-    text-shadow:
-        0 0 18px rgba(157, 123, 255, 0.2),
-        0 0 30px rgba(77, 245, 255, 0.08);
 }
 
 .workspace {
@@ -696,8 +681,8 @@ body {
         padding: 12px 8px 18px;
     }
 
-    .hero h1 {
-        font-size: clamp(1.7rem, 11vw, 2.4rem);
+    .hero-art pre {
+        font-size: clamp(0.38rem, 2vw, 0.7rem);
     }
 
     .checker-row {
