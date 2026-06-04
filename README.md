@@ -6,8 +6,19 @@ A neon-styled automata and security lab for validating inputs, visualizing DFA f
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![CLI](https://img.shields.io/badge/CLI-slash%20commands-8b5cf6?style=for-the-badge&logo=windowsterminal&logoColor=white)](#cli)
 [![Web UI](https://img.shields.io/badge/web%20ui-visual%20lab-f43f5e?style=for-the-badge&logo=googlechrome&logoColor=white)](#web-app)
+[![Status](https://img.shields.io/badge/status-actively%20shaped-22c55e?style=for-the-badge)](#snapshot)
+[![Theme](https://img.shields.io/badge/theme-neon%20terminal-f97316?style=for-the-badge)](#highlights)
+[![DFA](https://img.shields.io/badge/dfa-visual%20flow-14b8a6?style=for-the-badge)](#what-it-checks)
+[![Security](https://img.shields.io/badge/security-heuristic%20rules-e879f9?style=for-the-badge)](#what-it-checks)
 
 > Local web app + CLI, sharing the same validation core.
+
+<table>
+<tr>
+<td><strong>Palette</strong></td>
+<td><span style="color:#00d4ff">cyan</span> · <span style="color:#8b5cf6">violet</span> · <span style="color:#f43f5e">rose</span> · <span style="color:#22c55e">green</span> · <span style="color:#f97316">amber</span></td>
+</tr>
+</table>
 
 ```text
     ___         __                      __  __      __
@@ -26,6 +37,21 @@ A neon-styled automata and security lab for validating inputs, visualizing DFA f
 | CLI | Slash-command terminal mode with the same validation logic |
 | Core logic | Shared Python rules for email, phone, password, IPv4, SQLi, and XSS |
 | Diagrams | Built-in DFA views for the automata-based validators |
+
+### Visual map
+
+```text
+web app  ── colorful browser lab
+  │
+  ├─ controls  ── validators + rules + status
+  ├─ output    ── traces + crack-time output
+  └─ diagram   ── DFA render + fullscreen
+
+cli      ── slash-command terminal
+  │
+  ├─ /email /phone /ipv4 /password
+  └─ /sqli /xss /diagram /rules
+```
 
 <details>
 <summary>What makes this different</summary>
@@ -58,6 +84,16 @@ A neon-styled automata and security lab for validating inputs, visualizing DFA f
 - No frontend framework dependency
 - Clean split between presentation, logic, and server entrypoints
 - Easy terminal workflow for quick checks and demo runs
+
+### Design tokens
+
+| Token | Purpose |
+| --- | --- |
+| `cyan` | Active highlights, status glow, and foreground energy |
+| `violet` | CLI and tertiary accent color |
+| `rose` | Alerts, warnings, and emphasis blocks |
+| `green` | Successful states and safe outcomes |
+| `amber` | Callouts, badges, and supporting accents |
 
 ## Interface notes
 
@@ -149,6 +185,10 @@ These badges are intentionally loud so the README feels more like a landing page
 | Python badge | Shows the runtime requirement |
 | CLI badge | Highlights the terminal mode |
 | Web UI badge | Highlights the browser workflow |
+
+<blockquote>
+  <strong>Color goal:</strong> every top-level section should have something visually distinct, whether that's a badge, a table, a callout, a code fence, or a disclosure block.
+</blockquote>
 
 ## Deployment
 
