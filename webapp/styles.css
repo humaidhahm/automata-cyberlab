@@ -81,6 +81,21 @@ body {
     display: block;
 }
 
+.page-footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    padding: 8px 0 0;
+    text-align: center;
+    color: var(--accent-a);
+    font-size: 1.1rem;
+    text-shadow: 0 0 12px rgba(77, 245, 255, 0.18);
+}
+
+.page-footer p {
+    margin: 0;
+}
+
 .hero {
     text-align: center;
     padding: 10px 0 4px;

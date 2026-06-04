@@ -13,6 +13,19 @@ A neon-styled DFA and security lab for validating inputs, visualizing flows, and
 
 > Local web app + CLI, sharing the same validation core.
 
+## Hero Banner
+
+```text
+   ██████╗██╗   ██╗██████╗ ███████╗██████╗ ███████╗██████╗
+  ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗██╔════╝██╔══██╗
+  ██║      ╚████╔╝ ██████╔╝█████╗  ██║  ██║█████╗  ██║  ██║
+  ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██║  ██║██╔══╝  ██║  ██║
+  ╚██████╗   ██║   ██║  ██║███████╗██████╔╝███████╗██████╔╝
+   ╚═════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═════╝ ╚══════╝╚═════╝
+
+  DFA visualization, CLI checks, and cyber-lab workflows
+```
+
 <table>
 <tr>
 <td><strong>Palette</strong></td>
@@ -52,6 +65,31 @@ cli      ── slash-command terminal
   ├─ /email /phone /ipv4 /password
   └─ /sqli /xss /diagram /rules
 ```
+
+## Installation
+
+1. Clone the repository:
+
+  ```bash
+  git clone https://github.com/humaidhahm/automata-cyberlab.git
+  cd automata-cyberlab
+  ```
+
+2. Make sure Python 3.10+ is available.
+
+3. Run the web app:
+
+  ```bash
+  python main.py
+  ```
+
+4. Or run the CLI:
+
+  ```bash
+  python main.py --cli
+  ```
+
+5. Open the local URL shown in the terminal for the web app.
 
 <details>
 <summary>What makes this different</summary>
@@ -104,6 +142,16 @@ The project deliberately mixes several UI patterns so it reads more like a real 
 3. A details disclosure block for deeper context
 4. Code fences for copy-friendly startup commands
 5. A fixed project tree to clarify the structure
+
+## Preview Gallery
+
+These preview panels are embedded as SVG assets so the README has visual samples without relying on external screenshots.
+
+| Preview | File |
+| --- | --- |
+| Web workspace | [docs/previews/web-workspace.svg](docs/previews/web-workspace.svg) |
+| CLI shell | [docs/previews/cli-shell.svg](docs/previews/cli-shell.svg) |
+| DFA panel | [docs/previews/dfa-panel.svg](docs/previews/dfa-panel.svg) |
 
 ## Project layout
 
@@ -201,4 +249,5 @@ The project is deployed on Vercel:
 - The tool is for educational and demo purposes.
 - Security detections are signature-based heuristics, not full static or dynamic analysis.
 - The CLI and web app share the same core validation rules.
+- Made with ❤️ for automata and security demos.
 

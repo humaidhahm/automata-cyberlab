@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="CyberDFA DFA panel preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1222"/>
+      <stop offset="100%" stop-color="#05040d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <text x="74" y="92" fill="#f3f7ff" font-size="44" font-family="monospace" font-weight="700">DFA Panel</text>
+  <text x="74" y="132" fill="#4ef6ff" font-size="20" font-family="monospace">fullscreen-ready diagram space</text>
+
+  <rect x="70" y="170" width="1060" height="480" rx="26" fill="#07131f" stroke="#5de4c7" stroke-opacity="0.22"/>
+  <line x1="220" y1="420" x2="420" y2="420" stroke="#4ef6ff" stroke-width="5"/>
+  <line x1="420" y1="420" x2="620" y2="420" stroke="#9d7bff" stroke-width="5"/>
+  <line x1="620" y1="420" x2="820" y2="420" stroke="#ff5fa2" stroke-width="5"/>
+  <line x1="820" y1="420" x2="1020" y2="420" stroke="#22c55e" stroke-width="5"/>
+
+  <circle cx="220" cy="420" r="44" fill="#4ef6ff"/>
+  <circle cx="420" cy="420" r="44" fill="#9d7bff"/>
+  <circle cx="620" cy="420" r="44" fill="#ff5fa2"/>
+  <circle cx="820" cy="420" r="44" fill="#22c55e"/>
+  <circle cx="1020" cy="420" r="44" fill="#f97316"/>
+
+  <text x="220" y="428" text-anchor="middle" fill="#050814" font-size="20" font-family="monospace" font-weight="700">q0</text>
+  <text x="420" y="428" text-anchor="middle" fill="#050814" font-size="20" font-family="monospace" font-weight="700">q1</text>
+  <text x="620" y="428" text-anchor="middle" fill="#050814" font-size="20" font-family="monospace" font-weight="700">q2</text>
+  <text x="820" y="428" text-anchor="middle" fill="#050814" font-size="20" font-family="monospace" font-weight="700">q3</text>
+  <text x="1020" y="428" text-anchor="middle" fill="#050814" font-size="20" font-family="monospace" font-weight="700">q4</text>
+
+  <text x="186" y="378" fill="#9eb3ff" font-size="18" font-family="monospace">start</text>
+  <text x="782" y="378" fill="#9eb3ff" font-size="18" font-family="monospace">accept</text>
+  <text x="530" y="514" fill="#9eb3ff" font-size="20" font-family="monospace">email / phone / ipv4 DFA render</text>
+</svg>

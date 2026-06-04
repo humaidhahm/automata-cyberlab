@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="CyberDFA web workspace preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1222"/>
+      <stop offset="55%" stop-color="#101a31"/>
+      <stop offset="100%" stop-color="#05040d"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17264a"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <circle cx="140" cy="110" r="150" fill="#4ef6ff" opacity="0.12"/>
+  <circle cx="1050" cy="120" r="180" fill="#9d7bff" opacity="0.14"/>
+  <circle cx="980" cy="640" r="200" fill="#ff5fa2" opacity="0.08"/>
+
+  <text x="80" y="92" fill="#f3f7ff" font-size="44" font-family="monospace" font-weight="700">CyberDFA</text>
+  <text x="80" y="130" fill="#4ef6ff" font-size="20" font-family="monospace">neon web lab</text>
+
+  <rect x="60" y="170" width="680" height="470" rx="24" fill="url(#panel)" stroke="#5de4c7" stroke-opacity="0.25"/>
+  <rect x="780" y="170" width="360" height="220" rx="24" fill="url(#panel)" stroke="#5de4c7" stroke-opacity="0.25"/>
+  <rect x="780" y="420" width="360" height="220" rx="24" fill="url(#panel)" stroke="#5de4c7" stroke-opacity="0.25"/>
+
+  <rect x="92" y="214" width="280" height="46" rx="12" fill="#050814" stroke="#4ef6ff" stroke-opacity="0.3"/>
+  <rect x="390" y="214" width="110" height="46" rx="12" fill="#4ef6ff" opacity="0.85"/>
+  <rect x="514" y="214" width="110" height="46" rx="12" fill="#9d7bff" opacity="0.85"/>
+  <rect x="92" y="282" width="540" height="42" rx="10" fill="#0b142b"/>
+  <rect x="92" y="336" width="540" height="42" rx="10" fill="#0b142b"/>
+  <rect x="92" y="390" width="540" height="42" rx="10" fill="#0b142b"/>
+  <rect x="92" y="444" width="540" height="42" rx="10" fill="#0b142b"/>
+  <rect x="92" y="498" width="540" height="42" rx="10" fill="#0b142b"/>
+
+  <text x="108" y="310" fill="#f3f7ff" font-size="22" font-family="monospace">Validate Email</text>
+  <text x="108" y="364" fill="#f3f7ff" font-size="22" font-family="monospace">Validate Password</text>
+  <text x="108" y="418" fill="#f3f7ff" font-size="22" font-family="monospace">Detect SQL Injection</text>
+  <text x="108" y="472" fill="#f3f7ff" font-size="22" font-family="monospace">Detect XSS Pattern</text>
+  <text x="108" y="526" fill="#f3f7ff" font-size="22" font-family="monospace">Open DFA Diagram</text>
+
+  <text x="806" y="214" fill="#f3f7ff" font-size="24" font-family="monospace" font-weight="700">Status</text>
+  <rect x="806" y="240" width="300" height="42" rx="20" fill="#123d2d"/>
+  <text x="836" y="268" fill="#8cffc8" font-size="20" font-family="monospace">Ready</text>
+  <rect x="806" y="306" width="300" height="30" rx="8" fill="#0b142b"/>
+  <rect x="806" y="346" width="240" height="12" rx="6" fill="#4ef6ff" opacity="0.8"/>
+
+  <text x="806" y="454" fill="#f3f7ff" font-size="24" font-family="monospace" font-weight="700">DFA Panel</text>
+  <rect x="806" y="480" width="300" height="110" rx="16" fill="#07131f" stroke="#9d7bff" stroke-opacity="0.35"/>
+  <path d="M832 554 C860 500, 906 500, 934 554" fill="none" stroke="#4ef6ff" stroke-width="4"/>
+  <circle cx="858" cy="542" r="18" fill="#4ef6ff"/>
+  <circle cx="908" cy="542" r="18" fill="#9d7bff"/>
+  <circle cx="958" cy="542" r="18" fill="#ff5fa2"/>
+</svg>

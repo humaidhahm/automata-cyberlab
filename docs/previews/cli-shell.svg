@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="CyberDFA CLI preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05040d"/>
+      <stop offset="100%" stop-color="#0d1020"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="url(#bg)"/>
+  <rect x="58" y="58" width="1084" height="604" rx="24" fill="#07131f" stroke="#4ef6ff" stroke-opacity="0.22"/>
+  <text x="90" y="108" fill="#4ef6ff" font-size="46" font-family="monospace" font-weight="700">CyberDFA CLI</text>
+  <text x="90" y="150" fill="#9eb3ff" font-size="22" font-family="monospace">slash commands + shared validation engine</text>
+
+  <rect x="90" y="194" width="1020" height="420" rx="20" fill="#050814"/>
+  <text x="120" y="246" fill="#8cffc8" font-size="26" font-family="monospace">cyberdfa&gt; /email abc@mail.com</text>
+  <text x="120" y="296" fill="#f3f7ff" font-size="24" font-family="monospace">status: Accepted: valid email string.</text>
+  <text x="120" y="346" fill="#f3f7ff" font-size="24" font-family="monospace">trace:</text>
+  <text x="150" y="396" fill="#9eb3ff" font-size="22" font-family="monospace">q0 -- a --&gt; q1</text>
+  <text x="150" y="438" fill="#9eb3ff" font-size="22" font-family="monospace">q1 -- @ --&gt; q2</text>
+  <text x="150" y="480" fill="#9eb3ff" font-size="22" font-family="monospace">q4 -- c --&gt; q5</text>
+  <text x="120" y="550" fill="#ff9ab3" font-size="24" font-family="monospace">/rules password  /diagram email  /xss payload</text>
+  <text x="90" y="680" fill="#4ef6ff" font-size="20" font-family="monospace">made for fast terminal-first lab work</text>
+</svg>
